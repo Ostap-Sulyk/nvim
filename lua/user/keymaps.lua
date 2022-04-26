@@ -99,7 +99,7 @@ keymap("n", "<Leader>sh", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
 keymap("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
 keymap("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
 keymap("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
-keymap("n", "<leader>f", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
+keymap("n", "<leader>gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
 keymap("n", "[d", '<cmd>lua vim.diagnostic.goto_prev({ border = "rounded" })<CR>', opts)
 keymap(
   "n",
