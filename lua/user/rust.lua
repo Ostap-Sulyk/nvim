@@ -1,12 +1,6 @@
 local nvim_lsp = require'lspconfig'
 
 local opts = {
-  local signs = {
-      { name = "DiagnosticSignError", text = "" },
-      { name = "DiagnosticSignWarn", text = "" },
-      { name = "DiagnosticSignHint", text = "" },
-      { name = "DiagnosticSignInfo", text = "" },
-    },
     tools = { -- rust-tools options
         autoSetHints = true,
         hover_with_actions = true,
@@ -35,5 +29,28 @@ local opts = {
         }
     },
 }
+ local signs = {
+      { name = "DiagnosticSignError", text = "" },
+      { name = "DiagnosticSignWarn", text = "" },
+      { name = "DiagnosticSignHint", text = "" },
+      { name = "DiagnosticSignInfo", text = "" },
+    },
+    signs = {
+      active = signs,
+    },
+    update_in_insert = true,
+    underline = true,
+    severity_sort = true,
+    float = {
+      focusable = false,
+      style = "minimal",
+      border = "rounded",
+      source = "always",
+      header = "",
+      prefix = "",
+    },
+  },
+
+  vim.diagnostic.config(config)
 
 require('rust-tools').setup(opts)
