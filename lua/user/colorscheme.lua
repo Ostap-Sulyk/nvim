@@ -1,4 +1,4 @@
-local colorscheme = "codedark"
+local colorscheme = "onedark"
 
 
 vim.g.nord_contrast = false
