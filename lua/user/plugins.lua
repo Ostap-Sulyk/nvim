@@ -53,13 +53,11 @@ use 'lewis6991/gitsigns.nvim'
 -- lazy git
 use 'kdheepak/lazygit.nvim'
 -- colorsheme
+use 'arcticicestudio/nord-vim'
+use 'monsonjeremy/onedark.nvim'
 use 'morhetz/gruvbox'
---use 'ellisonleao/gruvbox.nvim'
-use 'tomasiser/vim-code-dark'
-use 'ful1e5/onedark.nvim'
-use 'shaunsingh/nord.nvim'
--- Using Packer:
-use 'Mofiqul/vscode.nvim'
+--use 'ful1e5/onedark.nvim'
+--use 'shaunsingh/nord.nvim'
 --use 'arcticicestudio/nord-vim'
 
 -- statusline
@@ -98,10 +96,8 @@ use {   -- ruts crates
 -- markdown preview
 use {'iamcco/markdown-preview.nvim', run = [[sh -c 'cd app && yarn install']]}
 
-
-
 use 'nvim-treesitter/nvim-treesitter'
---use 'p00f/nvim-ts-rainbow'
+use 'p00f/nvim-ts-rainbow'
 
 
 use 'kyazdani42/nvim-tree.lua'

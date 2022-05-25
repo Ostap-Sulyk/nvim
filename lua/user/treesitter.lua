@@ -13,15 +13,15 @@ configs.setup {
     additional_vim_regex_highlighting = true,
   },
   indent = { enable = true, disable = { "yaml" } },
-  rainbow = {
-    enable = true,
-    -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
-    extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
-    max_file_lines = nil, -- Do not enable for files with more than n lines, int
-    colors = {
-      "#BF616A","#A3BE8C","#EBCB8B","#D08770","#B48EAD"
-
-    }, -- table of hex strings
-    -- termcolors = {} -- table of colour name strings
-  }
+--  rainbow = {
+--    enable = false,
+--    -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
+--    extended_mode = true, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+--    max_file_lines = nil, -- Do not enable for files with more than n lines, int
+--    colors = {
+--      "#A3BE8C","#BF616A","#EBCB8B","#D08770","#B48EAD"
+--
+--    }, -- table of hex strings
+--    -- termcolors = {} -- table of colour name strings
+--  }
 }
