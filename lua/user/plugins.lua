@@ -52,18 +52,23 @@ use 'windwp/nvim-autopairs'
 use 'lewis6991/gitsigns.nvim'
 -- lazy git
 use 'kdheepak/lazygit.nvim'
+
 -- colorsheme
-use 'arcticicestudio/nord-vim'
-use 'monsonjeremy/onedark.nvim'
-use 'morhetz/gruvbox'
---use 'ful1e5/onedark.nvim'
---use 'shaunsingh/nord.nvim'
 --use 'arcticicestudio/nord-vim'
+use 'lifepillar/vim-solarized8'
+use 'monsonjeremy/onedark.nvim'
+use { "ellisonleao/gruvbox.nvim" }
+use 'Mofiqul/vscode.nvim'
+--use 'ful1e5/onedark.nvim'
+  
+use 'shaunsingh/nord.nvim'
 
 -- statusline
 use 'nvim-lualine/lualine.nvim'
+
 ---- tabs
 use 'akinsho/bufferline.nvim'
+
 -- terminal
 use 'akinsho/toggleterm.nvim'
 

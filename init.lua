@@ -14,5 +14,4 @@ require("user.nvim-tree")
 require("user.gitsigns")
 require("user.terminal")
 require("user.rust")
-
-require('onedark').setup()
+--require("user.transparent")
