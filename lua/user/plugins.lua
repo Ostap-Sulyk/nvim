@@ -60,6 +60,7 @@ use 'monsonjeremy/onedark.nvim'
 use { "ellisonleao/gruvbox.nvim" }
 use 'Mofiqul/vscode.nvim'
 --use 'ful1e5/onedark.nvim'
+  
 use 'shaunsingh/nord.nvim'
 
 -- statusline
@@ -102,6 +103,7 @@ use {'iamcco/markdown-preview.nvim', run = [[sh -c 'cd app && yarn install']]}
 
 use 'nvim-treesitter/nvim-treesitter'
 use 'p00f/nvim-ts-rainbow'
+
 
 use 'kyazdani42/nvim-tree.lua'
 use 'kyazdani42/nvim-web-devicons' -- optional, for file icon
