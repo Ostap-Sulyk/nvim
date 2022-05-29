@@ -52,20 +52,22 @@ use 'windwp/nvim-autopairs'
 use 'lewis6991/gitsigns.nvim'
 -- lazy git
 use 'kdheepak/lazygit.nvim'
+
 -- colorsheme
-use 'morhetz/gruvbox'
---use 'ellisonleao/gruvbox.nvim'
-use 'tomasiser/vim-code-dark'
-use 'ful1e5/onedark.nvim'
-use 'shaunsingh/nord.nvim'
--- Using Packer:
-use 'Mofiqul/vscode.nvim'
 --use 'arcticicestudio/nord-vim'
+use 'lifepillar/vim-solarized8'
+use 'monsonjeremy/onedark.nvim'
+use { "ellisonleao/gruvbox.nvim" }
+use 'Mofiqul/vscode.nvim'
+--use 'ful1e5/onedark.nvim'
+use 'shaunsingh/nord.nvim'
 
 -- statusline
 use 'nvim-lualine/lualine.nvim'
+
 ---- tabs
 use 'akinsho/bufferline.nvim'
+
 -- terminal
 use 'akinsho/toggleterm.nvim'
 
@@ -80,6 +82,7 @@ use "hrsh7th/cmp-nvim-lsp" --lsp
 -- LSP
 use "neovim/nvim-lspconfig" -- enable LSP
 use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+use 'simrat39/rust-tools.nvim'
 -- colorizer
  -- use 'norcalli/nvim-colorizer.lua'
 
@@ -97,11 +100,8 @@ use {   -- ruts crates
 -- markdown preview
 use {'iamcco/markdown-preview.nvim', run = [[sh -c 'cd app && yarn install']]}
 
-
-
 use 'nvim-treesitter/nvim-treesitter'
---use 'p00f/nvim-ts-rainbow'
-
+use 'p00f/nvim-ts-rainbow'
 
 use 'kyazdani42/nvim-tree.lua'
 use 'kyazdani42/nvim-web-devicons' -- optional, for file icon
