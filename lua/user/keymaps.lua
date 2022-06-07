@@ -89,5 +89,3 @@ keymap("n", "<Leader>p", ":MarkdownPreview<CR>", opts)
 
 -- symbol_outline
 keymap("n", "<Leader>o", ":SymbolsOutline<CR>", opts)
-
-

@@ -1,5 +1,4 @@
-local colorscheme = "gruvbox"
-
+local colorscheme = "nord"
 
 vim.g.nord_contrast = false
 vim.g.nord_borders = true

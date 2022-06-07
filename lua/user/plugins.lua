@@ -56,16 +56,14 @@ use 'kdheepak/lazygit.nvim'
 -- colorsheme
 --use 'arcticicestudio/nord-vim'
 use 'lifepillar/vim-solarized8'
-use 'monsonjeremy/onedark.nvim'
 use { "ellisonleao/gruvbox.nvim" }
 use 'Mofiqul/vscode.nvim'
---use 'ful1e5/onedark.nvim'
+use 'ful1e5/onedark.nvim'
   
 use 'shaunsingh/nord.nvim'
 
 -- statusline
 use 'nvim-lualine/lualine.nvim'
-
 ---- tabs
 use 'akinsho/bufferline.nvim'
 
@@ -82,9 +80,9 @@ use "hrsh7th/cmp-nvim-lsp" --lsp
 
 -- LSP
 use "neovim/nvim-lspconfig" -- enable LSP
-use 'simrat39/rust-tools.nvim'
 use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 use 'mfussenegger/nvim-dap'
+use 'simrat39/rust-tools.nvim'
 -- colorizer
  -- use 'norcalli/nvim-colorizer.lua'
 
