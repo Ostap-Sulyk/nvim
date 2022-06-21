@@ -51,7 +51,6 @@ use 'windwp/nvim-autopairs'
 -- git integration
 use 'lewis6991/gitsigns.nvim'
 -- lazy git
-use 'kdheepak/lazygit.nvim'
 
 -- colorsheme
 --use 'arcticicestudio/nord-vim'
@@ -84,7 +83,7 @@ use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 use 'mfussenegger/nvim-dap'
 use 'simrat39/rust-tools.nvim'
 -- colorizer
- -- use 'norcalli/nvim-colorizer.lua'
+use 'norcalli/nvim-colorizer.lua'
 
 -- snippets
 use "L3MON4D3/LuaSnip" --snippet engine
