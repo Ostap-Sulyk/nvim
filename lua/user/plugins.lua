@@ -54,11 +54,10 @@ use 'lewis6991/gitsigns.nvim'
 
 -- colorsheme
 --use 'arcticicestudio/nord-vim'
-use 'lifepillar/vim-solarized8'
 use { "ellisonleao/gruvbox.nvim" }
 use 'Mofiqul/vscode.nvim'
 use 'ful1e5/onedark.nvim'
-  
+
 use 'shaunsingh/nord.nvim'
 
 -- statusline
@@ -81,6 +80,8 @@ use "hrsh7th/cmp-nvim-lsp" --lsp
 use "neovim/nvim-lspconfig" -- enable LSP
 use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 use 'mfussenegger/nvim-dap'
+
+-- rust specific
 use 'simrat39/rust-tools.nvim'
 -- colorizer
 use 'norcalli/nvim-colorizer.lua'
