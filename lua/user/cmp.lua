@@ -31,7 +31,7 @@ local kind_icons = {
   Value = "",
   Enum = "",
   Keyword = "",
- -- Snippet = "",
+  -- Snippet = "",
   Color = "",
   File = "",
   Reference = "",
@@ -51,8 +51,8 @@ cmp.setup {
     end,
   },
   mapping = {
-   -- ["<C-k>"] = cmp.mapping.select_prev_item(),
-	--	["<C-j>"] = cmp.mapping.select_next_item(),
+    -- ["<C-k>"] = cmp.mapping.select_prev_item(),
+    --	["<C-j>"] = cmp.mapping.select_next_item(),
     ["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-1), { "i", "c" }),
     ["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(1), { "i", "c" }),
     ["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
@@ -83,7 +83,7 @@ cmp.setup {
     ["<S-Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_prev_item()
-     elseif luasnip.jumpable(-1) then
+      elseif luasnip.jumpable(-1) then
         luasnip.jump(-1)
       else
         fallback()
@@ -98,7 +98,7 @@ cmp.setup {
     format = function(entry, vim_item)
       -- Kind icons
       vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
-    --vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
+      --vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
         nvim_lsp = "[LSP]",
         luasnip = "[Snippet]",
@@ -119,11 +119,12 @@ cmp.setup {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
   },
---  documentation = {
---    border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
---  },
+  window = {
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
   experimental = {
-    ghost_text = false,
-    native_menu = false,
+    ghost_text = true,
+    --native_menu = false,
   },
 }

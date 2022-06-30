@@ -54,7 +54,8 @@ use 'lewis6991/gitsigns.nvim'
 
 -- colorsheme
 --use 'arcticicestudio/nord-vim'
-use { "ellisonleao/gruvbox.nvim" }
+--use { "ellisonleao/gruvbox.nvim" }
+--use 'morhetz/gruvbox'
 use 'Mofiqul/vscode.nvim'
 use 'ful1e5/onedark.nvim'
 
@@ -79,6 +80,8 @@ use "hrsh7th/cmp-nvim-lsp" --lsp
 -- LSP
 use "neovim/nvim-lspconfig" -- enable LSP
 use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+
+-- debuging
 use 'mfussenegger/nvim-dap'
 
 -- rust specific
