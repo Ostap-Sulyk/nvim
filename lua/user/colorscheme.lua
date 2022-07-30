@@ -15,14 +15,8 @@ vim.g.gruvbox_italic = 0
 vim.g.gruvbox_bold = 0
 --vim.g.gruvbox_improved_warnings = 1
 
-if colorscheme == "gruvbox" then
-  require("gruvbox").setup({
-    overrides = {
-      SignColumn = { fg = "#282828", bg = "#282828" },
-    },
-  })
-
-
+if colorscheme == "onedark" then
+  require("onedark").setup()
 end
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)

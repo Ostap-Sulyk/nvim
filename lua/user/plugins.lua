@@ -53,13 +53,14 @@ use 'lewis6991/gitsigns.nvim'
 -- lazy git
 
 -- colorsheme
---use 'arcticicestudio/nord-vim'
 --use { "ellisonleao/gruvbox.nvim" }
 --use 'morhetz/gruvbox'
 use 'Mofiqul/vscode.nvim'
-use 'ful1e5/onedark.nvim'
+--use 'monsonjeremy/onedark.nvim'
+use 'olimorris/onedarkpro.nvim'
 
-use 'shaunsingh/nord.nvim'
+--use 'shaunsingh/nord.nvim'
+use 'arcticicestudio/nord-vim'
 
 -- statusline
 use 'nvim-lualine/lualine.nvim'
@@ -78,8 +79,10 @@ use "saadparwaiz1/cmp_luasnip" -- snippet completions
 use "hrsh7th/cmp-nvim-lsp" --lsp
 
 -- LSP
-use "neovim/nvim-lspconfig" -- enable LSP
-use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+use {
+    "williamboman/nvim-lsp-installer",
+    "neovim/nvim-lspconfig",
+}
 
 -- debuging
 use 'mfussenegger/nvim-dap'
