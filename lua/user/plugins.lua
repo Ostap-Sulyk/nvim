@@ -40,87 +40,85 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
--- My plugins here
-use "wbthomason/packer.nvim" -- Have packer manage itself
-use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  -- My plugins here
+  use "wbthomason/packer.nvim" -- Have packer manage itself
+  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
--- autopairs
-use 'windwp/nvim-autopairs'
+  -- autopairs
+  use 'windwp/nvim-autopairs'
+  -- git integration
+  use 'lewis6991/gitsigns.nvim'
+  -- lazy git
 
--- git integration
-use 'lewis6991/gitsigns.nvim'
--- lazy git
+  -- colorsheme
+  use 'Mofiqul/vscode.nvim'
+  --use 'arcticicestudio/nord-vim'
+  use 'overcache/NeoSolarized'
+  use "shaunsingh/nord.nvim"
+  use 'navarasu/onedark.nvim'
+  use 'ghifarit53/tokyonight-vim'
+  use "ellisonleao/gruvbox.nvim"
+  -- statusline
+  use 'nvim-lualine/lualine.nvim'
+  ---- tabs
+  use 'akinsho/bufferline.nvim'
 
--- colorsheme
---use { "ellisonleao/gruvbox.nvim" }
---use 'morhetz/gruvbox'
-use 'Mofiqul/vscode.nvim'
---use 'monsonjeremy/onedark.nvim'
-use 'olimorris/onedarkpro.nvim'
+  -- terminal
+  use 'akinsho/toggleterm.nvim'
 
---use 'shaunsingh/nord.nvim'
-use 'arcticicestudio/nord-vim'
+  ---- cmp plugins
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp" --lsp
 
--- statusline
-use 'nvim-lualine/lualine.nvim'
----- tabs
-use 'akinsho/bufferline.nvim'
-
--- terminal
-use 'akinsho/toggleterm.nvim'
-
----- cmp plugins
-use "hrsh7th/nvim-cmp" -- The completion plugin
-use "hrsh7th/cmp-buffer" -- buffer completions
-use "hrsh7th/cmp-path" -- path completions
-use "hrsh7th/cmp-cmdline" -- cmdline completions
-use "saadparwaiz1/cmp_luasnip" -- snippet completions
-use "hrsh7th/cmp-nvim-lsp" --lsp
-
--- LSP
-use {
+  -- indent
+  use "lukas-reineke/indent-blankline.nvim"
+  -- LSP
+  use {
     "williamboman/nvim-lsp-installer",
     "neovim/nvim-lspconfig",
-}
+  }
+  -- INLAY HINTS
 
--- debuging
-use 'mfussenegger/nvim-dap'
+  -- debuging
+  use 'mfussenegger/nvim-dap'
 
--- rust specific
-use 'simrat39/rust-tools.nvim'
--- colorizer
-use 'norcalli/nvim-colorizer.lua'
+  -- colorizer
+  use 'norcalli/nvim-colorizer.lua'
 
--- snippets
-use "L3MON4D3/LuaSnip" --snippet engine
-use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-use {   -- ruts crates
-  'saecki/crates.nvim',
-  event = { "BufRead Cargo.toml" },
-  config = function()
+  -- snippets
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use { -- ruts crates
+    'saecki/crates.nvim',
+    event = { "BufRead Cargo.toml" },
+    config = function()
       require('crates').setup()
-  end,
-}
+    end,
+  }
 
--- markdown preview
-use {'iamcco/markdown-preview.nvim', run = [[sh -c 'cd app && yarn install']]}
+  -- markdown preview
+  use { 'iamcco/markdown-preview.nvim', run = [[sh -c 'cd app && yarn install']] }
 
-use 'nvim-treesitter/nvim-treesitter'
-use 'p00f/nvim-ts-rainbow'
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'p00f/nvim-ts-rainbow'
 
 
-use 'kyazdani42/nvim-tree.lua'
-use 'kyazdani42/nvim-web-devicons' -- optional, for file icon
+  use 'kyazdani42/nvim-tree.lua'
+  use 'kyazdani42/nvim-web-devicons' -- optional, for file icon
 
----- Telescope
-use 'nvim-telescope/telescope.nvim'
+  ---- Telescope
+  use 'nvim-telescope/telescope.nvim'
 
--- tags
-use 'simrat39/symbols-outline.nvim'
+  -- tags
+  use 'simrat39/symbols-outline.nvim'
 
--- dashboard
---use 'glepnir/dashboard-nvim'
+  -- dashboard
+  --use 'glepnir/dashboard-nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
